@@ -6,7 +6,7 @@ set -e
 # build
 npm run build
 
-# navigate into the build output directory
+# navigate into the build output directoryush -f https://github.com/icesplendent
 cd dist
 
 # if you are deploying to a custom domain
@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
- git push -f https://github.com/icesplendent/personal_blog.git master:gh-pages
+ git p/personal_blog.git master:gh-pages
 
 cd -
