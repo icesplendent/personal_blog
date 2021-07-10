@@ -48,12 +48,13 @@
     </div>
 
     <v-navigation-drawer
-      v-show="showAppBar"
+      v-model="showAppBar"
+      temporary
       app
-      width="30%"
+      width="25%"
       class="nav"
     >
-      <v-list>
+      <v-list style="float:left">
         <v-list-item>
           <v-list-item-avatar size="200">
             <v-img src="../assets/me_new.jpg" />
@@ -62,7 +63,7 @@
 
         <v-list-item link>
           <v-list-item-content>
-            <v-list-item-title class="title">
+            <v-list-item-title>
               <h1>王柏涵 Allen</h1>
             </v-list-item-title>
             <v-list-item-subtitle>Icesplendent@gmail.com</v-list-item-subtitle>
@@ -70,30 +71,41 @@
         </v-list-item>
       </v-list>
 
+      <div style="clear:both;" />
+
       <v-divider />
 
       <v-list
         nav
         dense
       >
-        <v-list-item class="btn-info" link>
-          <v-list-item-icon>
-            <v-icon>mdi-information</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>About</v-list-item-title>
-        </v-list-item>
-        <v-list-item class="btn-info" link>
-          <v-list-item-icon>
-            <v-icon>mdi-tools</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Skills</v-list-item-title>
-        </v-list-item>
-        <v-list-item class="btn-info" link>
-          <v-list-item-icon>
-            <v-icon>mdi-ship-wheel</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Activities</v-list-item-title>
-        </v-list-item>
+        <v-list-item-group
+          active-class="border"
+          color="indigo"
+        >
+          <v-list-item link>
+            <v-list-item-icon>
+              <v-icon>
+                mdi-information
+              </v-icon>
+            </v-list-item-icon>
+            <v-list-item-title large>
+              About
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon>
+              <v-icon>mdi-tools</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Skills</v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon>
+              <v-icon>mdi-ship-wheel</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Activities</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -124,5 +136,9 @@ margin: auto;
 
 #after {
   margin-left: 30%
+}
+
+.border {
+  border: 2px dashed orange;
 }
 </style>
