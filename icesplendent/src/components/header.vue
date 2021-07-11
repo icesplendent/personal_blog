@@ -1,17 +1,17 @@
 <template>
   <div>
-    <div style="margin-left: 30%">
+    <div>
       <v-app-bar
         app
         color="light-blue"
         dark
-        shrink-on-scroll
+      >
+        <!-- shrink-on-scroll
         prominent
         src="https://picsum.photos/1920/1080?random"
         fade-img-on-scroll
         scroll-threshold="500"
-        :class="{ after: true}"
-      >
+        :class="{ after: true}" -->
         <template v-slot:img="{ props }">
           <v-img
             v-bind="props"
