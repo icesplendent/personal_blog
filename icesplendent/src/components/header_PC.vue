@@ -33,6 +33,7 @@
     <v-btn icon>
       <v-icon>mdi-instagram</v-icon>
     </v-btn>
+    <div class="d-inline" style="width: 3vw" />
   </v-app-bar>
 </template>
 

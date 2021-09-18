@@ -40,7 +40,7 @@ export default {
   background-color: blue;
 }
 #app {
-  background: url('./assets/websiteBG.jpg') fixed center;
+  background: url('./assets/skycity.jpg') fixed center;
   background-size: cover;
 }
 </style>
