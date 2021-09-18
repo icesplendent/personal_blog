@@ -10,7 +10,7 @@
     </v-btn>
 
     <v-spacer />
-    <v-menu offset-y open-on-hover>
+    <v-menu offset-y open-on-hover transition="slide-y-transition" class="scroll">
       <template
         v-slot:activator="{ on }"
       >
@@ -77,4 +77,8 @@
   };
   </script>
 
-  <style scoped />
+  <style scoped>
+  .scroll {
+    transition: all 6s ease;
+  }
+  </style>
