@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app>
+  <v-app-bar app hide-on-scroll>
     <div class="d-inline" style="width: 3vw" />
 
     <v-btn plain>
