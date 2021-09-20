@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app hide-on-scroll>
+  <v-app-bar app hide-on-scroll elevation="0">
     <div class="d-inline" style="width: 3vw" />
 
     <v-btn plain>
@@ -68,9 +68,9 @@
       return {
         // MenuShow: false,
         About: [
-          { title: 'about' },
-          { title: 'skills' },
-          { title: 'activity' }
+          { title: 'ABOUT' },
+          { title: 'SKILL' },
+          { title: 'ACTIVITY' }
         ]
       };
     }

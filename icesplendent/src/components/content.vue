@@ -1,22 +1,39 @@
 <template>
-  <v-content>
+  <v-main>
     <v-container grid-list-md>
-      <v-row>
+      <v-row no-gutters>
         <v-col cols="12">
-          <v-card about class="d-block" elevation="0" color="rgb(255,255,255,0.8)">
-            <v-card-title>About</v-card-title>
-            <v-list
-              color="rgb(255,255,255,0.8)"
-              class="pa-4 grey--text text--darken-2"
-            >
-              出於對電機資訊相關的熱情，於⾼中便開始參與資訊社以接觸相關領域。在進入⼤學後更是積極突破，除了在課業上的努⼒，更是多⽅參與活動，再精進⾃我技能的同時，也開拓我的視野。
+          <v-card about elevation="0" color="rgb(255,255,255,0.8)">
+            <v-card-title class="font-weight-bold">
+              About
+            </v-card-title>
+            <v-list color="rgb(255,255,255,0.8)">
+              <v-container>
+                <v-row no-gutters>
+                  <v-col cols="3">
+                    <v-img src="../assets/me.jpg" />
+                  </v-col>
+                  <v-col cols="9">
+                    <v-card-text
+                      color="rgb(255,255,255,0.8)"
+                      class="pt-0"
+                    >
+                      出於對電機資訊相關的熱情，於⾼中便開始參與資訊社以接觸相關領域。在進入⼤學後更是積極突破，除了在課業上的努⼒，更是多⽅參與活動，再精進⾃我技能的同時，也開拓我的視野。
+                    </v-card-text>
+                  </v-col>
+                </v-row>
+              </v-container>
             </v-list>
           </v-card>
         </v-col>
+      </v-row>
+      <v-row>
         <v-col cols="12">
           <v-divider />
           <v-card skill elevation="0" color="rgb(255,255,255,0.8)">
-            <v-card-title>Skill</v-card-title>
+            <v-card-title class="font-weight-bold">
+              Skill
+            </v-card-title>
             <v-list color="rgb(255,255,255,0.8)">
               <v-list-item v-for="(item, i) in items" :key="i">
                 <v-list-item-icon>
@@ -30,10 +47,12 @@
         <v-col cols="12">
           <v-divider />
           <v-card activity elevation="0" color="rgb(255,255,255,0.8)">
-            <v-card-title>Activity</v-card-title>
+            <v-card-title class="font-weight-bold">
+              Activity
+            </v-card-title>
             <v-list
               color="rgb(255,255,255,0.8)"
-              class="pa-4 grey--text text--darken-2"
+              class="pa-4 "
             >
               出於對電機資訊相關的熱情，於⾼中便開始參與資訊社以接觸相關領域。在進入⼤學後更是積極突破，除了在課業上的努⼒，更是多⽅參與活動，再精進⾃我技能的同時，也開拓我的視野。
 
@@ -82,7 +101,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-content>
+  </v-main>
 </template>
 
 <script>
